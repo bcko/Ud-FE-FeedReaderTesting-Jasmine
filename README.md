@@ -46,3 +46,19 @@ Review the [Feed Reader Testing Project Rubric](https://review.udacity.com/#!/pr
 ### Useful Links
 * [Udacity Front End Nanodegree JavaScript Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)
 * [FeedReader Testing Project Rubric](https://review.udacity.com/#!/rubrics/18/view)
+
+## Project Submission
+In this project, you will be learning about testing with Javascript. Testing is an important part of the development process and many organizations practice a standard known as "test-driven development" or TDD. This is when developers write tests first, before they ever start developing their application.
+
+Whether you work in an organization that writes tests extensively to inform product development or one that uses tests to encourage iteration, testing has become an essential skill in modern web development!
+
+### Evaluation
+Your project will be evaluated by a Udacity reviewer according to the [FeedReader Testing Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric). Be sure to review it thoroughly before you submit. All criteria must "meet specifications" in order to pass.
+
+### Submission
+1. If build tools are used, submit both your source and production code in the same repository in separate directories. These directories are usually named src and dist respectively.
+2. If build tools are used the gulp or grunt.js file as well as the package.json file must be included in the submission.
+3. If build tools are used, the instructions for building the project and running the tool must be included in the README.md. You may find the short [Writing READMEs course](https://www.udacity.com/course/writing-readmes--ud777) helpful.
+4. The node_modules directory may contain thousands of files and should not be contained in the submission. See the forum post [how to remove node_modules directory from Github repository](https://discussions.udacity.com/t/how-to-remove-node-modules-directory-from-github-respository/40929) for instructions.
+5. The master branch is the default Github repository branch. If you wish to submit another branch, you'll need to set it as the [new default branch](https://help.github.com/articles/setting-the-default-branch/) inside your Github repository.
+6. If you are having any problems submitting your project or wish to check on the status of your submission, please email us at frontend-project@udacity.com or visit us in the [discussion forums](http://discussions.udacity.com/).
