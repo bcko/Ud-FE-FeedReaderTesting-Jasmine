@@ -116,7 +116,7 @@ $(function() {
 
          it('there is at least a single .entry element within the .feed container', function(done) {
             expect($('.feed .entry').length).toBeGreaterThanOrEqual(1);
-
+            done();
          });
 
 
