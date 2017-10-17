@@ -89,26 +89,47 @@ $(function() {
             // checks to see the existence of menu-hidden class in <body>            
             expect($('body').hasClass('menu-hidden')).toBe(true);
 
-
-
         });
-
-
 
     });
 
-        
-
-         
+                 
     /* TODO: Write a new test suite named "Initial Entries" */
-
-
+    describe('Initial Entries', function() {
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
+         beforeEach(function(done){
+            /* This function performs everything necessary to load a
+             * feed using the Google Feed Reader API. It will then
+             * perform all of the DOM operations required to display
+             * feed entries on the page. Feeds are referenced by their
+             * index position within the allFeeds array.
+             * This function all supports a callback as the second parameter
+             * which will be called after everything has run successfully.
+             */
+            loadFeed(0, done);
+         });
+
+         it('there is at least a single .entry element within the .feed container', function(done) {
+            expect($('.feed .entry').length).toBeGreaterThanOrEqual(1);
+
+         });
+
+
+
+
+
+
+
+
+
+
+    });
+
 
 
 
