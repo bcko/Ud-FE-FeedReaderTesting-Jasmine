@@ -72,13 +72,13 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
         it('menu changes visibility when the menu icon is clicked.', function() {
-            // clicks icon-list
+            // clicks menu-icon-list
             $('.menu-icon-list').click();
             
             // checks to see the existence of menu-hidden class in <body>
             expect($('body').hasClass('menu-hidden')).toBe(false);
 
-            // clicks icon-list
+            // clicks menu-icon-list
             $('.menu-icon-list').click();
 
             // checks to see the existence of menu-hidden class in <body>            
@@ -133,9 +133,10 @@ $(function() {
             // load feed 0 and store values in feeds[0]
             loadFeed(0, function() {
                 feeds.push($('.feed').html());
+                // load feed 1
+                loadFeed(1, done);
             });
-            // load feed 1
-            loadFeed(1, done);
+           
         });
 
 
