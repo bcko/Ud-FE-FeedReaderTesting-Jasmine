@@ -73,13 +73,13 @@ $(function() {
           */
         it('menu changes visibility when the menu icon is clicked.', function() {
             // clicks icon-list
-            $('.icon-list').click();
+            $('.menu-icon-list').click();
             
             // checks to see the existence of menu-hidden class in <body>
             expect($('body').hasClass('menu-hidden')).toBe(false);
 
             // clicks icon-list
-            $('.icon-list').click();
+            $('.menu-icon-list').click();
 
             // checks to see the existence of menu-hidden class in <body>            
             expect($('body').hasClass('menu-hidden')).toBe(true);
