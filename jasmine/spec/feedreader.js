@@ -34,10 +34,8 @@ $(function() {
         it('URL defined and not empty', function() {
             // iterate over allFeeds
             for (let feed of allFeeds) {
-                // expect the actual value to be defined. (Not undefined)
-                expect(feed.url).toBeDefined();
-                expect(feed.url.length).not.toBe(0);
-                
+                // checks if url.length === 0 and url === undefined
+                expect(feed.url).toBeTruthy();
             }
          });
 
