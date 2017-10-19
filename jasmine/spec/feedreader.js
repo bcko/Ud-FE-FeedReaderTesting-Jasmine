@@ -33,7 +33,7 @@ $(function() {
          */
         it('URL defined and not empty', function() {
             // iterate over allFeeds
-            for (let feed of allFeeds) {
+            for (const feed of allFeeds) {
                 // checks if url.length === 0 and url === undefined
                 expect(feed.url).toBeTruthy();
             }
@@ -46,7 +46,7 @@ $(function() {
          */
          it('Name defined and not empty', function() {
             // iterate over allFeeds
-            for (let feed of allFeeds) {
+            for (const feed of allFeeds) {
                 // expect the actual value to be defined. (Not undefined)
                 expect(feed.name).toBeDefined();
                 expect(feed.name.length).not.toBe(0);
