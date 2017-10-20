@@ -72,14 +72,14 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
         it('menu changes visibility when the menu icon is clicked.', function() {
-            // clicks menu-icon-list
-            $('.menu-icon-list').click();
+            // clicks menu-icon-link
+            $('.menu-icon-link').click();
             
             // checks to see the existence of menu-hidden class in <body>
             expect($('body').hasClass('menu-hidden')).toBe(false);
 
             // clicks menu-icon-list
-            $('.menu-icon-list').click();
+            $('.menu-icon-link').click();
 
             // checks to see the existence of menu-hidden class in <body>            
             expect($('body').hasClass('menu-hidden')).toBe(true);
